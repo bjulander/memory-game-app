@@ -1,9 +1,9 @@
 const About = () => {
     return (
         <>
-            <span>
+            <div>
                 <h1>About the creator</h1>
-            </span>
+            </div>
         </>
     )
 }

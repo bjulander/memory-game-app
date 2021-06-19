@@ -5,8 +5,9 @@ export default function NavBar() {
         <>  
             <div className="navBar">
                 <NavLink to="/">Home</NavLink>
-                <NavLink to="/scoreboard">Scoreboard</NavLink>
                 <NavLink to="/about">About</NavLink>
+                <NavLink to="/scoreboard">Scoreboard</NavLink>
+                <NavLink to="/game">New Game</NavLink>
             </div>
         </>
     )

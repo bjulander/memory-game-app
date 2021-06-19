@@ -8,5 +8,5 @@ export default function fetchScores() {
         dispatch({type: "FETCH_SCORES", payload: scoresArray})
       })
     }
-  }
+}
   

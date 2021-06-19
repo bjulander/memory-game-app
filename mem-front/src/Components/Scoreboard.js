@@ -1,27 +1,24 @@
-import React, {Component, Fragment} from 'react'
+import React, {Component} from 'react'
 import {connect} from 'react-redux'
-// import fetchScores from '../actions/fetchScores'
+import Scores from './Scores'
 
 class Scoreboard extends Component {
-
-    // componentDidMount() {
-    //     this.props.fetchScores()
-    // }
 
     render() {
         return (
             <>
-                <ul>
-                    {this.props.scores && this.props.scores.map((score, i) => <li key={score.id}>{score.clicks}</li> )}
-                </ul>
+                <div>
+                    {this.props.scores.length > 0 ? <Scores games={this.props.scores} /> : <h2 style={{textAlign: "center"}}>Loading Scores...</h2>}
+                </div>
             </>
         )
     }
 }
 
-function mapStateToProps(state) {
-    console.log("mapStateToProps")
+function mapStateToProps(state){
+    debugger
     return {scores: state.scores}
-  }
-
+}
+  
 export default connect(mapStateToProps)(Scoreboard)
+  
