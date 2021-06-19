@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
-import Login from "./Login"
-import Game from "./Game"
-import Navbar from "./Navbar"
-import EndGame from "./EndGame"
+// import Login from "./Login"
+// import Game from "./Game"
+// import EndGame from "./EndGame"
 import Scoreboard from "./Scoreboard"
 import Instructions from './Instructions.js'
+import About from './About.js'
 import {Route, Switch} from 'react-router-dom'
 import {Link} from 'react-router-dom'
 
@@ -24,9 +24,9 @@ class Main extends Component {
                         </Route>
                     <Route exact path="/scoreboard">
                         <Scoreboard />
-                    </Route>
+                   </Route>
                     <Route exact path="/about">
-                        About Comp
+                        <About/>
                     </Route>
                 </Switch>
             </>
