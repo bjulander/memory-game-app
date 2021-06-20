@@ -6,8 +6,15 @@ import Scoreboard from "./Scoreboard"
 import Instructions from './Instructions.js'
 import About from './About.js'
 import {Route, Switch} from 'react-router-dom'
+import { connect } from 'react-redux'
+import fetchScores from '../actions/fetchScores'
+import {withRouter} from 'react-router-dom'
 
 class Main extends Component {
+
+    componentDidMount(){
+        this.props.fetchScores()
+    }
 
     render(){
         return (
@@ -32,4 +39,4 @@ class Main extends Component {
 }
 
 
-export default Main
+export default withRouter(connect(null, {fetchScores})(Main))

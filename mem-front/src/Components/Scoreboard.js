@@ -7,16 +7,13 @@ class Scoreboard extends Component {
     render() {
         return (
             <>
-                <div>
-                    {this.props.scores.length > 0 ? <Scores games={this.props.scores} /> : <h2 style={{textAlign: "center"}}>Loading Scores...</h2>}
-                </div>
+                <Scores scores={this.props.scores}/>
             </>
         )
     }
 }
 
 function mapStateToProps(state){
-    debugger
     return {scores: state.scores}
 }
   

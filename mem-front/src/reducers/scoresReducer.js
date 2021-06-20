@@ -3,7 +3,7 @@ export default function reducer(state = {user: null, scores: []}, action) {
         case "ADD_SCORE": 
           return {...state, scores: [...state.scores, action.payload]}
         case "FETCH_SCORES":
-          return {...state, scores: [...action.payload]}
+          return {scores: action.payload}
         default:
           return {...state}
     }
