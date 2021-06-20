@@ -6,10 +6,10 @@ import {BrowserRouter as Router} from 'react-router-dom'
 import {createStore, compose, applyMiddleware} from 'redux'
 import thunk from 'redux-thunk'
 import {composeWithDevTools} from 'redux-devtools-extension'
-import gameReducer from './reducers/scoresReducer'
+import gamesReducer from './reducers/gamesReducer'
 
 const initialState = {user: null, scores: []}
-const store = createStore(gameReducer, initialState, compose(applyMiddleware(thunk), composeWithDevTools()))
+const store = createStore(gamesReducer, initialState, compose(applyMiddleware(thunk), composeWithDevTools()))
 
 ReactDOM.render(
   <Router >

@@ -4,7 +4,6 @@ import TableRow from '@material-ui/core/TableRow'
 
 
 export class ScoreRow extends Component {
-
   render() {
     return (      
         <TableRow>
