@@ -4,7 +4,7 @@ import Din from "./Din.jpeg"
 import Phoenix from "./Phoenix.png"
 import Thrawn from "./Thrawn.jpeg"
 import Grogu from "./Grogu.jpeg"
-import Logo from "./Logo.jpeg"
+import swLogo from "./swLogo.jpeg"
 
 export let images = [
     {
@@ -69,4 +69,4 @@ export let images = [
     }
 ]
 
-export const blankCard = Logo
+export const blankCard = swLogo

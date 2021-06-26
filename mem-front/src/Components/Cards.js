@@ -1,16 +1,14 @@
 import React, {Component} from "react";
-import { images } from "./Images/index";
+import { images } from "../Components/Images/index.js";
 
-class Images extends Component {
-
+class Cards extends Component {
   characters = []
 
   handleClick = (event) => {
     let character = event.target;
     if (character.getAttribute("check") === "found") {
-      return;
+      return
     }
-
     if (character !== this.characters[0]) {
       this.switch(character);
       this.characters.push(character);
@@ -18,7 +16,6 @@ class Images extends Component {
       this.switch(character);
       this.characters = [];
     }
-
     if (this.characters.length > 2) {
       if (!this.checkName(this.characters[0], this.characters[1])) {
         this.switch(this.characters[0]);
@@ -40,7 +37,7 @@ class Images extends Component {
         this.characters = [];
       }
     }
-  };
+  }
 
   checkName = (character1, character2) => {
     if (character1.getAttribute("name") === character2.getAttribute("name")) {
@@ -49,7 +46,7 @@ class Images extends Component {
       return true;
     }
     return false;
-  };
+  }
 
   switch = (target) => {
     if (target.getAttribute("check") === "true") {
@@ -59,25 +56,25 @@ class Images extends Component {
       target.setAttribute("check", "true");
       target.classList.remove("image-blank");
     }
-  };
+  }
+
   render() {
     return (
-      <div className="images">
-        {images
-          .sort(() => Math.random() - 0.5)
-          .map((element) => {
+      <>
+        <div className="images">
+        {images.sort(() => Math.random() - 0.5).map((element) => {
             return (
-              <div
-                className="image image-blank"
-                name={element.name}
-                style={{ background: `url(${element.pic})` }}
-                check="false"
-                onClick={this.handleClick}
-              />
-            );
+              <div className="image image-blank" 
+              name={element.name} 
+              style={{ background: `url(${element.pic})` }} 
+              check="false" 
+              onClick={this.handleClick}/>
+            )
           })}
-      </div>
-    );
+        </div>
+      </>
+    )
   }
 }
-export default Images;
+
+export default Cards

@@ -9,19 +9,28 @@ import {Route, Switch} from 'react-router-dom'
 import { connect } from 'react-redux'
 import fetchScores from '../actions/fetchScores'
 import {withRouter} from 'react-router-dom'
+import Login from "./Login"
 
 class Main extends Component {
 
-    // componentDidMount(){
-    //     this.props.fetchScores()
-    // }
+    constructor() {
+        super()
+        this.state = { 
+            showLogin: true,
+            newUser: true
+        }
+    }
+
+    handleLogin(e){
+        this.setState({ showLogin: false, newUser: false})
+    }
 
     render(){
         return (
             <>
                 <Switch>
                     <Route exact path="/">
-                        <Instructions/>
+                        {this.state.showLogin ? <Login newUser={this.handleLogin.bind(this)} /> : <Instructions/>}
                     </Route>
                     <Route path="/game">
                         <GameContainer/>
