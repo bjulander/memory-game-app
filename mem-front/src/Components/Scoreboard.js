@@ -6,7 +6,6 @@ import fetchScores from '../actions/fetchScores'
 class Scoreboard extends Component {
 
     componentDidMount(){
-        debugger
         this.props.fetchScores()
     }
 
