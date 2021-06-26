@@ -1,0 +1,93 @@
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100vw;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 40vw;
+  text-align: center;
+  box-shadow: 6px 6px 6px gray;
+  background: white;
+}
+
+.navBar {
+  display: flex;
+  box-shadow: 4px 4px 6px gray;
+  justify-content: space-between;
+  padding: 5px;
+  width: auto;
+  background-color: #b8d1eb;
+  border: 2px solid #000000;
+}
+
+.game {
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  width: 485px;
+  box-shadow: 4px 4px 10px gray;
+  padding: 5px;
+}
+
+.image {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  height: 120px;
+  width: 120px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.image-back {
+  background: url("./Components/Images/swLogo.jpeg") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  height: 120px;
+  width: 120px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.end-game {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 40vw;
+  background: white;
+  box-shadow: 12px 12px 10px gray;
+}
