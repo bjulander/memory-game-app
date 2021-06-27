@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
-// import Login from "./Login"
 import GameContainer from "./GameContainer"
-// import EndGame from "./EndGame"
 import Scoreboard from "./Scoreboard"
 import Instructions from './Instructions.js'
 import About from './About.js'
@@ -13,19 +11,17 @@ import Login from "./Login"
 
 class Main extends Component {
 
-    constructor() {
-        super()
-        this.state = { 
-            showLogin: true,
-            newUser: true
-        }
+    state = { 
+        showLogin: true,
+        newUser: true
     }
-
-    handleLogin(e){
-        this.setState({ showLogin: false, newUser: false})
+    
+    handleLogin(boolean){
+        this.setState({ showLogin: boolean, newUser: boolean})
     }
 
     render(){
+        // const {showLogin} = this.state
         return (
             <>
                 <Switch>

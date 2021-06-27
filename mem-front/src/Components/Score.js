@@ -3,7 +3,7 @@ import TableCell from '@material-ui/core/TableCell'
 import TableRow from '@material-ui/core/TableRow'
 
 
-export class ScoreRow extends Component {
+export class Score extends Component {
   render() {
     return (      
         <TableRow>
@@ -16,4 +16,4 @@ export class ScoreRow extends Component {
   }
 }
 
-export default ScoreRow
+export default Score

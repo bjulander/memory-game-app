@@ -9,4 +9,4 @@ export let messages = [
       message: "You think you can do it faster next time?",
     },
     { title: "Way to go!", message: "That was lightening fast, Try again?" },
-  ];
+  ]

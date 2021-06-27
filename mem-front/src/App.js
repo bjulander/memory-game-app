@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import Main from "./Components/Main"
 import NavBar from "./Components/NavBar"
 import "./App.css"
@@ -14,4 +14,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

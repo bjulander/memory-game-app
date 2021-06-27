@@ -1,15 +1,16 @@
-import React from "react";
-import Cards from "./Cards";
+import React, {Component} from "react"
+import Cards from "./Cards"
 
-class Game extends React.Component {
-  
+class Game extends Component {
+
   render() {
+    // console.log(this.state.clicks)
     return (
       <div className="game">
-        <Cards endGame={this.props.endGame} />
+        <Cards endGame={this.props.endGame}/>
       </div>
-    );
+    )
   }
 }
 
-export default Game;
+export default Game

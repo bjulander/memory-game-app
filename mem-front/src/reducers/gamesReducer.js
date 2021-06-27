@@ -1,7 +1,5 @@
 export default function reducer(state = {user: null, scores: []}, action) {
       switch (action.type) {
-        case "ADD_SCORE": 
-          return {...state, scores: [...state.scores, action.payload]}
         case "ADD_USER": 
           return {user: [action.payload]}
         case "FETCH_SCORES":

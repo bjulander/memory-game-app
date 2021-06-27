@@ -58,6 +58,16 @@
   margin: 10px;
 }
 
+.tracker {
+  display: flex;
+  box-shadow: 4px 4px 6px gray;
+  justify-content: space-between;
+  padding: 5px;
+  width: auto;
+  background-color: #b8d1eb;
+  border: 2px solid #000000;
+}
+
 .image-back {
   background: url("./Components/Images/swLogo.jpeg") !important;
   background-size: contain !important;
