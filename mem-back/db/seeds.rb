@@ -10,7 +10,7 @@ User.create(name: "Blake")
 User.create(name: "Ryli")
 User.create(name: "Collins")
 
-Score.create(clicks: 50, user_id: 1)
-Score.create(clicks: 100, user_id: 2)
-Score.create(clicks: 150, user_id: 3)
+Score.create(time: 20, user_id: 1)
+Score.create(time: 30, user_id: 2)
+Score.create(time: 50, user_id: 3)
 

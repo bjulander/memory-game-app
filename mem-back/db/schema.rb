@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2021_06_19_203225) do
 
   create_table "scores", force: :cascade do |t|
-    t.integer "clicks", default: 1000
+    t.integer "time", default: 1000
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -4,9 +4,6 @@ import Scoreboard from "./Scoreboard"
 import Instructions from './Instructions.js'
 import About from './About.js'
 import {Route, Switch} from 'react-router-dom'
-import { connect } from 'react-redux'
-import fetchScores from '../actions/fetchScores'
-import {withRouter} from 'react-router-dom'
 import Login from "./Login"
 
 class Main extends Component {
@@ -21,7 +18,6 @@ class Main extends Component {
     }
 
     render(){
-        // const {showLogin} = this.state
         return (
             <>
                 <Switch>
@@ -44,4 +40,4 @@ class Main extends Component {
 }
 
 
-export default withRouter(connect(null, {fetchScores})(Main))
+export default Main

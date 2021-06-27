@@ -54,9 +54,10 @@ body{
 
 .game {
   display: flex;
-  height: 85vh;
+  height: auto;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .images {

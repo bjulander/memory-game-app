@@ -3,10 +3,6 @@ import { images } from "../Components/Images/index.js"
 
 class Cards extends Component {
 
-  componentDidMount(){
-    debugger
-  }
-
   characters = []
 
   handleClick(e){
