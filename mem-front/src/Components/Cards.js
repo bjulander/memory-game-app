@@ -3,10 +3,13 @@ import { images } from "../Components/Images/index.js"
 
 class Cards extends Component {
 
+  componentDidMount(){
+    debugger
+  }
+
   characters = []
 
   handleClick(e){
-    this.addClick(1)
     let character = e.target
     if (character.getAttribute("check") === "found") {
       return
@@ -41,12 +44,6 @@ class Cards extends Component {
     }
   }
 
-  addClick = (click) => {
-    console.log(click)
-    return click
-
-  }
-
   checkName = (character1, character2) => {
     if (character1.getAttribute("name") === character2.getAttribute("name")) {
       character1.setAttribute("check", "found")
@@ -66,11 +63,10 @@ class Cards extends Component {
       console.log(target)
     }
   }
+
   render() {
     return (
       <>
-        <div className="Tracker">
-        </div>
         <div className="images">
           {images.sort(() => Math.random() - 0.5).map((element) => {
             return ( 

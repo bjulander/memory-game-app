@@ -29,7 +29,7 @@ class Main extends Component {
                         {this.state.showLogin ? <Login newUser={this.handleLogin.bind(this)} /> : <Instructions/>}
                     </Route>
                     <Route path="/game">
-                        <GameContainer/>
+                    {this.state.showLogin ? <Login newUser={this.handleLogin.bind(this)} /> : <GameContainer/>} 
                     </Route>
                     <Route exact path="/scoreboard">
                         <Scoreboard />

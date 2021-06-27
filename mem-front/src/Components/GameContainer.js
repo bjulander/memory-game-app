@@ -6,6 +6,7 @@ class GameContainer extends Component {
 
     state = {
         showEndGame: false
+
     }
 
     handleEndGame(boolean){
@@ -19,7 +20,7 @@ class GameContainer extends Component {
     render(){
         return (
             <>
-                {this.state.showEndGame ? <EndGame newGame={this.handleEndGame.bind(this)}/> : <Game endGame={this.handleEndGame.bind(this)} />}
+                {this.state.showEndGame ? <EndGame newGame={this.handleEndGame.bind(this)}/> : <Game endGame={this.handleEndGame.bind(this)}/>}
             </>
         )
     }

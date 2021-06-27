@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-// import { messages } from "./Components/Messages.js"
+import { connect } from 'react-redux'
 
 class EndGame extends Component {
 
@@ -9,15 +9,19 @@ class EndGame extends Component {
 
   render() {
     return (
-      <div className="end-game">
-        <div className="message">
+      <div className="wrapper">
+        <div className="endGame">
           <button className="btn btn-primary" onClick={this.handleClick}>
             Go Again
           </button>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default EndGame
+function mapStateToProps(state){
+  return {scores: state.scores}
+}
+
+export default connect(mapStateToProps)(EndGame)

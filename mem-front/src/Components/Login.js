@@ -15,7 +15,6 @@ class Login extends Component {
     this.props.addUser(name)
     this.setState({user: ""})
     this.props.newUser(false, false)
-    // {name: this.state.name, id: Math.floor(Math.random() * Math.floor(100000000))}
     }
 
     handleChange(e){

@@ -3,7 +3,7 @@ const Instructions = () => {
         <>
             <div>
                 <h1>Game instructions!</h1>
-                <p>blah blah blah</p>
+                <p>May the force be with you</p>
             </div>
         </>
     )
