@@ -1,19 +1,12 @@
-export default function reducer(state = {user: null, scores: null}, action) {
-      switch (action.type) {
-        case "ADD_USER": 
-          return {user: action.payload}
-        case "FETCH_SCORES":
-          return {scores: action.payload}
-        default:
-          return {...state}
-    }
+export default function reducer(state = {user: null, scores: []}, action) {
+  switch (action.type) {
+    case "ADD_USER": 
+      return {...state, user: {...action.payload}}
+    case "FETCH_SCORES":
+      return {...state, scores: [...action.payload]}
+    case "ADD_GAME":
+      return  {...state, scores: action.payload.score}
+    default:
+      return {...state}
+  }
 }
-
-
-   // case "ADD_ITEM":
-        //   const updatedList = state.lists.find(score => score.id === action.payload.scoreId) // first find list that todo is associated with
-        //   updatedList.todos = [...updatedList.todos, action.payload] // replace todos property on the list
-    // case "DELETE_SCORE":
-        //   return {scores: state.scores.filter(score => score.id !== action.payload)}
-        
-

@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create(name: "Blake")
-User.create(name: "Ryli")
-User.create(name: "Collins")
+User.create(name: "BAJ")
+User.create(name: "RMJ")
+User.create(name: "CJ")
 
 Score.create(time: 20, user_id: 1)
 Score.create(time: 30, user_id: 2)

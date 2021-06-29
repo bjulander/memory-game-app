@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import addScore from '../actions/addScore'
 import {connect} from 'react-redux'
+import fetchScores from '../actions/fetchScores'
 
 class Timer extends Component {
 
@@ -24,6 +25,8 @@ class Timer extends Component {
     this.props.addScore(score, userId)
     clearInterval(this.interval)
     this.setState({time: 0})
+    this.props.fetchScores()
+    
   }
 
   render() {
@@ -40,15 +43,10 @@ class Timer extends Component {
       time: prevState.time + 1
     }))
   }
-
-  stopClock = () => {
-    clearInterval(this.interval);
-    this.setState({ className: "hidden" });
-  }
 }
 
 function mapStateToProps(state){
   return {user: state.user}
 }
 
-export default connect(mapStateToProps, {addScore})(Timer)
+export default connect(mapStateToProps, {addScore, fetchScores})(Timer)

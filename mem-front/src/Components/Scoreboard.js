@@ -10,9 +10,11 @@ class Scoreboard extends Component {
     }
 
     render() {
+        let allScores = this.props.scores
+        let scr = allScores.sort((a,b) => (a.time > b.time) ? 1 : ((b.time > a.time) ? -1 : 0))
         return (
             <>
-                <Scores scores={this.props.scores}/>
+                {this.props.scores.length > 0 ? <Scores scores={scr} /> : <h5>Loading scores come back later</h5>}
             </>
         )
     }

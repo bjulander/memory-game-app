@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import { connect } from 'react-redux'
+// import {getUser} from './actions/getUser'
 
 class EndGame extends Component {
 
@@ -8,12 +9,12 @@ class EndGame extends Component {
   }
 
   render() {
+    debugger
     return (
       <div className="wrapper">
         <div className="endGame">
-          <button className="btn btn-primary" onClick={this.handleClick}>
-            Go Again
-          </button>
+          <h2>Great work Master Jedi!</h2>
+          <button className="btn btn-primary" onClick={this.handleClick}>New Game</button>
         </div>
       </div>
     )
@@ -21,7 +22,8 @@ class EndGame extends Component {
 }
 
 function mapStateToProps(state){
-  return {scores: state.scores}
+  debugger
+  return {scores: state.scores, user: state.user}
 }
 
 export default connect(mapStateToProps)(EndGame)

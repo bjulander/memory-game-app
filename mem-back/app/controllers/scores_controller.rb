@@ -1,10 +1,8 @@
 class ScoresController < ApplicationController
 
     def index
-        binding.pry
         scores = Score.all
-        render json: scores.sort
-        
+        render json: scores
     end
 
     def create

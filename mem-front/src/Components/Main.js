@@ -5,6 +5,8 @@ import Instructions from './Instructions.js'
 import About from './About.js'
 import {Route, Switch} from 'react-router-dom'
 import Login from "./Login"
+import PopupExample from './PopupExample'
+import { connect } from 'react-redux'
 
 class Main extends Component {
 
@@ -20,24 +22,31 @@ class Main extends Component {
     render(){
         return (
             <>
-                <Switch>
+                {this.state.showLogin || this.props.user === null ? 
+                    <Login newUser={this.handleLogin.bind(this)} /> 
+                    : <Switch>
                     <Route exact path="/">
-                        {this.state.showLogin ? <Login newUser={this.handleLogin.bind(this)} /> : <Instructions/>}
+                        <Instructions/>
                     </Route>
                     <Route path="/game">
-                    {this.state.showLogin ? <Login newUser={this.handleLogin.bind(this)} /> : <GameContainer/>} 
+                       <GameContainer/>
                     </Route>
                     <Route exact path="/scoreboard">
                         <Scoreboard />
                    </Route>
                     <Route exact path="/about">
                         <About/>
+                        <PopupExample/>
                     </Route>
-                </Switch>
+                </Switch>}
             </>
         )
     }
 }
 
+function mapStateToProps(state){
+    return {user: state.user}
+}
 
-export default Main
+
+export default connect(mapStateToProps)(Main)

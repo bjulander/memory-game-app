@@ -5,8 +5,12 @@ class UsersController < ApplicationController
   end
 
   def create
-    user = User.new(name: params[:user])
-    user.save
-    render json: user
+    if params[:user] === ""
+      user = User.create(name: "Unknown")
+      render json: user
+    else
+      user = User.create(name: params[:user])
+      render json: user
+    end
   end
 end
