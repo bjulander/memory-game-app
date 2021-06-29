@@ -8,7 +8,7 @@ import thunk from 'redux-thunk'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import gamesReducer from './reducers/gamesReducer'
 
-const initialState = {user: null, scores: []}
+const initialState = {user: null, HighScores: [], score: null}
 const store = createStore(gamesReducer, initialState, compose(applyMiddleware(thunk), composeWithDevTools()))
 
 ReactDOM.render(

@@ -9,10 +9,10 @@ class EndGame extends Component {
   }
 
   render() {
-    debugger
     return (
       <div className="wrapper">
         <div className="endGame">
+        {this.props.score !== null ? this.props.score.time : null} Seconds
           <h2>Great work Master Jedi!</h2>
           <button className="btn btn-primary" onClick={this.handleClick}>New Game</button>
         </div>
@@ -22,8 +22,7 @@ class EndGame extends Component {
 }
 
 function mapStateToProps(state){
-  debugger
-  return {scores: state.scores, user: state.user}
+  return {score: state.score}
 }
 
 export default connect(mapStateToProps)(EndGame)

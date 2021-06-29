@@ -5,7 +5,6 @@ import Instructions from './Instructions.js'
 import About from './About.js'
 import {Route, Switch} from 'react-router-dom'
 import Login from "./Login"
-import PopupExample from './PopupExample'
 import { connect } from 'react-redux'
 
 class Main extends Component {
@@ -36,7 +35,6 @@ class Main extends Component {
                    </Route>
                     <Route exact path="/about">
                         <About/>
-                        <PopupExample/>
                     </Route>
                 </Switch>}
             </>

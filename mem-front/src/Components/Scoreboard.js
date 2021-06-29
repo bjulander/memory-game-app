@@ -10,18 +10,18 @@ class Scoreboard extends Component {
     }
 
     render() {
-        let allScores = this.props.scores
+        let allScores = this.props.HighScores
         let scr = allScores.sort((a,b) => (a.time > b.time) ? 1 : ((b.time > a.time) ? -1 : 0))
         return (
             <>
-                {this.props.scores.length > 0 ? <Scores scores={scr} /> : <h5>Loading scores come back later</h5>}
+                {this.props.HighScores.length > 0 ? <Scores HighScores={scr} /> : <h5>Loading scores come back later</h5>}
             </>
         )
     }
 }
 
 function mapStateToProps(state){
-    return {scores: state.scores}
+    return {HighScores: state.HighScores}
 }
   
 export default connect(mapStateToProps, {fetchScores})(Scoreboard)
