@@ -1,5 +1,5 @@
 class ScoreSerializer < ActiveModel::Serializer
-    attributes :id, :time, :created_at, :user
+    attributes :id, :time, :user
   
     belongs_to :user
   end
