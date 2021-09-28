@@ -7,6 +7,7 @@ import {Route, Switch} from 'react-router-dom'
 import Login from "./Login"
 import { connect } from 'react-redux'
 
+
 class Main extends Component {
 
     state = { 

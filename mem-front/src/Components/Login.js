@@ -16,7 +16,8 @@ class Login extends Component {
       <>
         <div className="wrapper">  
           <div className="login">
-            <form onSubmit={this.handleSubmit.bind(this)}>
+            {/* <form onSubmit={this.handleSubmit.bind(this)}> */}
+            <form onSubmit={(e) => this.handleSubmit(e)}>
             <h1>Welcome young padawan</h1>
             <h4>To get started, enter a unique identifier.</h4>
               <label>Padawan:</label>

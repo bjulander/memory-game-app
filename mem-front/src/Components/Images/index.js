@@ -1,7 +1,7 @@
 import Anakin from "./Anakin.jpeg"
 import DeathStar from "./DeathStar.jpeg"
 import Din from "./Din.jpeg"
-import Phoenix from "./Phoenix.png"
+// import Phoenix from "./Phoenix.png"
 import Thrawn from "./Thrawn.jpeg"
 import Grogu from "./Grogu.jpeg"
 import swLogo from "./swLogo.jpeg"
@@ -10,10 +10,10 @@ import Obiwan from "./Obiwan.jpeg"
 // import Ahsoka from "./Ahsoka.jpeg"
 import Padme from "./Padme.jpeg"
 import Luke from "./Luke.jpeg"
-import Rex from "./Rex.png"
-import slave1 from "./slave1.jpeg"
-import Empire from "./Empire.jpeg"
-import Droids from "./Droids.jpeg"
+// import Rex from "./Rex.png"
+// import slave1 from "./slave1.jpeg"
+// import Empire from "./Empire.jpeg"
+// import Droids from "./Droids.jpeg"
 import Jyn from "./Jyn.jpeg"
 
 export let images = [
@@ -32,11 +32,11 @@ export let images = [
         pic: Din,
         flipped: false,
     },
-    {
-        name: "Phoenix",
-        pic: Phoenix,
-        flipped: false,
-    },
+    // {
+    //     name: "Phoenix",
+    //     pic: Phoenix,
+    //     flipped: false,
+    // },
     {
         name: "Thrawn",
         pic: Thrawn,
@@ -62,11 +62,11 @@ export let images = [
         pic: Din,
         flipped: false,
     },
-    {
-        name: "Phoenix",
-        pic: Phoenix,
-        flipped: false,
-    },
+    // {
+    //     name: "Phoenix",
+    //     pic: Phoenix,
+    //     flipped: false,
+    // },
     {
         name: "Thrawn",
         pic: Thrawn,
@@ -82,16 +82,16 @@ export let images = [
     //     pic: Ahsoka,
     //     flipped: false,
     // },
-    {
-        name: "Droids",
-        pic: Droids,
-        flipped: false,
-    },
-    {
-        name: "Empire",
-        pic: Empire,
-        flipped: false,
-    },
+    // {
+    //     name: "Droids",
+    //     pic: Droids,
+    //     flipped: false,
+    // },
+    // {
+    //     name: "Empire",
+    //     pic: Empire,
+    //     flipped: false,
+    // },
     {
         name: "Jyn",
         pic: Jyn,
@@ -112,16 +112,16 @@ export let images = [
         pic: Padme,
         flipped: false,
     },
-    {
-        name: "Rex",
-        pic: Rex,
-        flipped: false,
-    },
-    {
-        name: "slave1",
-        pic: slave1,
-        flipped: false,
-    },
+    // {
+    //     name: "Rex",
+    //     pic: Rex,
+    //     flipped: false,
+    // },
+    // {
+    //     name: "slave1",
+    //     pic: slave1,
+    //     flipped: false,
+    // },
     {
         name: "Yoda",
         pic: Yoda,
@@ -132,16 +132,16 @@ export let images = [
     //     pic: Ahsoka,
     //     flipped: false,
     // },
-    {
-        name: "Droids",
-        pic: Droids,
-        flipped: false,
-    },
-    {
-        name: "Empire",
-        pic: Empire,
-        flipped: false,
-    },
+    // {
+    //     name: "Droids",
+    //     pic: Droids,
+    //     flipped: false,
+    // },
+    // {
+    //     name: "Empire",
+    //     pic: Empire,
+    //     flipped: false,
+    // },
     {
         name: "Jyn",
         pic: Jyn,
@@ -162,16 +162,16 @@ export let images = [
         pic: Padme,
         flipped: false,
     },
-    {
-        name: "Rex",
-        pic: Rex,
-        flipped: false,
-    },
-    {
-        name: "slave1",
-        pic: slave1,
-        flipped: false,
-    },
+    // {
+    //     name: "Rex",
+    //     pic: Rex,
+    //     flipped: false,
+    // },
+    // {
+    //     name: "slave1",
+    //     pic: slave1,
+    //     flipped: false,
+    // },
     {
         name: "Yoda",
         pic: Yoda,

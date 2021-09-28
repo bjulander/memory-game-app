@@ -13,7 +13,7 @@ class EndGame extends Component {
       <div className="wrapper">
         <div className="endGame">
         {this.props.score !== null ? this.props.score.time : null} Seconds
-          <h2>Great work Master Jedi!</h2>
+          <h2>Great Work Master Jedi!</h2>
           <button className="btn btn-primary" onClick={this.handleClick}>New Game</button>
         </div>
       </div>
