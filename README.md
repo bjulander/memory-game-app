@@ -1,4 +1,4 @@
-# The SW Match Game!
+# The Jedi Initiate!
 
 by Blake Julander
 
